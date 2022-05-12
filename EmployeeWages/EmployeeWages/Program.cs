@@ -19,7 +19,7 @@ namespace EmployeeWages
             int DayNumber = 1;
             int EmpWorkinghrs = 0;
             int TotalWorkinghrs = 0;
-            while(DayNumber <= MAX_WORKING_DAYS && TotalWorkinghrs <= MAX_WORKING_HOURS)
+            while(DayNumber <= MAX_WORKING_DAYS || TotalWorkinghrs <= MAX_WORKING_HOURS)
             {
                 Random Check = new Random();
                 int CheckEmp = Check.Next(0, 3);
