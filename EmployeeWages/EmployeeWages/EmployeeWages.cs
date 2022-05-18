@@ -22,6 +22,11 @@ namespace EmployeeWages
         }
 
     }
+    public interface ICompanyEmpWage
+    {
+        public void AddCompany(string CompanyName, int WagePerHr, int FullHrPerDay, int PartHrPerDay, int MaxWorkHrs, int MaxWorkDays);
+        public void WageCalculation(string CompanyName);
+    }
     class EmployeeWageComputation
     {
         private const int IS_FULL_TIME = 1;
@@ -33,7 +38,7 @@ namespace EmployeeWages
         public EmployeeWageComputation(int Number)
         {
             Companies = new Dictionary<string, Company>();
-            Company_List = new string[2 * Number];
+            Company_List = new string[3 * Number];
 
         }
 
