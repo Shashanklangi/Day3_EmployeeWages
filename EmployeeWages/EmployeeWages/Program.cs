@@ -9,8 +9,11 @@ namespace EmployeeWages
         }
         public static void Main(string[] args)
         {
-            Program prg = new Program();
-            prg.EmpWage();
+            EmployeeWageComputation empWageComputation = new EmployeeWageComputation();
+            empWageComputation.AddCompany("TATA", 20, 8, 4, 100, 20);
+            empWageComputation.AddCompany("MAHINDRA", 20, 8, 4, 100, 20);
+            empWageComputation.CalculateEmpWage("tata");
+            empWageComputation.CalculateEmpWage("mahindra");
         }
     }
 }
