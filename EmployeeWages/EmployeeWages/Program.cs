@@ -16,7 +16,7 @@ namespace EmployeeWages
             empWageComputation.CalculateEmpWage("mahindra");
             empWageComputation.AddCompany("Tesla", 60, 8, 7, 10, 200);
             empWageComputation.CalculateEmpWage("tesla");
-            empWageComputation.ViewWage();
+            empWageComputation.ViewEmpWage();
 
         }
     }

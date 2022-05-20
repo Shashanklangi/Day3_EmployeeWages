@@ -93,7 +93,7 @@ namespace EmployeeWages
             Company_List.Add(MontlyWage);
 
         }
-        public void ViewWage()
+        public void ViewEmpWage()
         {
             for (int i = 0; i < Company_List.Count; i += 3)
             {
