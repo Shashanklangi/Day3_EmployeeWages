@@ -95,7 +95,7 @@ namespace EmployeeWages
             Company_List.Add(TotalWage);
 
         }
-        public void GetInfo(string CompanyName)
+        public void func(string CompanyName)
         {
             if (Company_List.Contains(CompanyName))
             {

@@ -19,7 +19,7 @@ namespace EmployeeWages
 
             Console.WriteLine("Enter the Company name");
             string company = Convert.ToString(Console.ReadLine());
-            empWageComputation.GetInfo();
+            empWageComputation.func();
 
         }
     }
