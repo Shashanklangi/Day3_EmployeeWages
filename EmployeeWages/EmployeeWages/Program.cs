@@ -16,13 +16,15 @@ namespace EmployeeWages
             empWageComputation.CalculateEmpWage("mahindra");
             empWageComputation.AddCompany("Tesla", 60, 8, 7, 10, 200);
             empWageComputation.CalculateEmpWage("tesla");
-
-            Console.WriteLine("Enter the Company name");
-            string company = Convert.ToString(Console.ReadLine());
-            empWageComputation.func();
+            empWageComputation.ViewWage();
 
         }
     }
 }
+
+
+
+
+
 
 
